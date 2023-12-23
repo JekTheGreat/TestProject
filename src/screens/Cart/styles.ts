@@ -12,6 +12,8 @@ const styles = StyleSheet.create({
   },
   searchContainer: {
     flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
     backgroundColor: colors.semiLightGray,
     borderRadius: 8,
   },
@@ -38,16 +40,6 @@ const styles = StyleSheet.create({
   },
   addToCart: {height: 150, width: 100, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.orange, borderRadius: 8},
   addToCartText: {fontSize: 18, fontWeight: '700', color: colors.white},
-  cartQuantityRed: {
-    position: 'absolute',
-    backgroundColor: colors.red,
-    top: -15,
-    left: -15,
-    padding: 2,
-    paddingHorizontal: 3,
-    borderRadius: 20,
-  },
-  quantityText: {fontSize: 10, fontWeight: '700', color: colors.white},
 });
 
 export default styles;

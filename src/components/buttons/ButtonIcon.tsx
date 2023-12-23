@@ -5,15 +5,16 @@ import Icon from 'react-native-vector-icons/Feather';
 
 export interface ButtonIconProps {
   icon?: ReactNode;
+  name?: string;
   onPress?: () => void;
 }
 
 const ButtonIcon = (props: ButtonIconProps) => {
-  const {icon, onPress} = props;
+  const {icon, name, onPress} = props;
 
   return (
     <Pressable style={styles.container} onPress={onPress}>
-      {icon ? icon : <Icon name="arrow-left" size={24} color={colors.black} />}
+      {icon ? icon : <Icon name={name || 'arrow-left'} size={24} color={colors.black} />}
     </Pressable>
   );
 };

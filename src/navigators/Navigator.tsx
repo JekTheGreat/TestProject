@@ -1,10 +1,6 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {
-  StackNavigationOptions,
-  TransitionSpecs,
-  createStackNavigator,
-} from '@react-navigation/stack';
+import {StackNavigationOptions, TransitionSpecs, createStackNavigator} from '@react-navigation/stack';
 import {RootStackParamList} from '@src/navigators/NavigatorTypes';
 import ShopScreen from '@src/screens/Shop/ShopScreen';
 import CartScreen from '@src/screens/Cart/CartScreen';

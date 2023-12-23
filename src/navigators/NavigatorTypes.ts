@@ -5,5 +5,4 @@ export type RootStackParamList = {
   CartScreen: undefined;
 };
 
-export type NavigationScreenProps<K extends keyof RootStackParamList> =
-  StackNavigationProp<RootStackParamList, K>;
+export type NavigationScreenProps<K extends keyof RootStackParamList> = StackNavigationProp<RootStackParamList, K>;
