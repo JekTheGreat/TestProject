@@ -1,8 +1,8 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 import {colors} from '@src/theme';
 
 const styles = StyleSheet.create({
-  container: {paddingHorizontal: 16, backgroundColor: colors.lightGray},
+  container: {paddingHorizontal: 16, backgroundColor: colors.lightGray, marginTop: Platform.OS === 'ios' ? 40 : 0},
   contentContainer: {rowGap: 12, paddingBottom: 20},
   headerLabel: {
     fontSize: 32,
