@@ -9,7 +9,7 @@ export interface ButtonIconProps {
   onPress?: () => void;
 }
 
-const ButtonIcon = (props: ButtonIconProps) => {
+export const ButtonIcon = (props: ButtonIconProps) => {
   const {icon, name, onPress} = props;
 
   return (
@@ -18,8 +18,6 @@ const ButtonIcon = (props: ButtonIconProps) => {
     </Pressable>
   );
 };
-
-export default ButtonIcon;
 
 const styles = StyleSheet.create({
   container: {

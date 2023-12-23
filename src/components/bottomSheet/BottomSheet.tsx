@@ -4,7 +4,7 @@ import {BottomsheetProps} from './types';
 import Sheet from './Sheet';
 import styles from './styles';
 
-const BottomSheet = (props: BottomsheetProps) => {
+export const BottomSheet = (props: BottomsheetProps) => {
   const {isVisible, onClose, renderChild} = props;
 
   if (!isVisible) {
@@ -20,5 +20,3 @@ const BottomSheet = (props: BottomsheetProps) => {
     </View>
   );
 };
-
-export default BottomSheet;

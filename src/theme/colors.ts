@@ -8,4 +8,5 @@ export const colors = {
   semiLightGray: '#E6E6E6',
   red: '#FF0000',
   green: '#008000',
+  background: 'rgba(0, 0, 0, 0.3)',
 };

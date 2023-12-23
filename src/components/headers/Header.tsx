@@ -1,6 +1,6 @@
 import {StyleSheet, View} from 'react-native';
 import React, {ReactNode} from 'react';
-import ButtonIcon, {ButtonIconProps} from '../buttons/ButtonIcon';
+import {ButtonIcon, ButtonIconProps} from '../buttons/ButtonIcon';
 
 interface HeaderProps extends ButtonIconProps {
   iconRight?: ReactNode;

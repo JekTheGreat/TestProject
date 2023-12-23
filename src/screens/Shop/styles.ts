@@ -50,6 +50,13 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   quantityText: {fontSize: 10, fontWeight: '700', color: colors.white},
+  filterV: {flex: 1, alignItems: 'center', justifyContent: 'center'},
+  categoryBtn: {borderWidth: 0.3, padding: 6, borderRadius: 6},
+  flexDirection: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
 });
 
 export default styles;
