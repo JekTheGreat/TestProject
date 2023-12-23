@@ -3,7 +3,7 @@ import {colors} from '@src/theme';
 
 const styles = StyleSheet.create({
   container: {paddingHorizontal: 16, backgroundColor: colors.lightGray},
-  contentContainer: {rowGap: 12, paddingBottom: 20},
+  contentContainer: {rowGap: 12, paddingBottom: 120},
   headerLabel: {
     fontSize: 32,
     fontWeight: '700',
@@ -39,7 +39,43 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   addToCart: {height: 150, width: 100, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.orange, borderRadius: 8},
+  cartBtnContainer: {height: 150, width: 100, alignItems: 'center', justifyContent: 'center', borderRadius: 8},
+  cartPlusMinus: {flexDirection: 'row', flex: 1, alignItems: 'center'},
+  removeButton: {
+    height: 150 / 2,
+    width: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: colors.red,
+    borderBottomEndRadius: 8,
+    borderBottomStartRadius: 8,
+  },
+  updateQty: {
+    height: 150 / 2,
+    width: 100 / 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  addQty: {backgroundColor: colors.green, borderTopEndRadius: 8},
+  minusQty: {backgroundColor: colors.amber, borderTopStartRadius: 8},
   addToCartText: {fontSize: 18, fontWeight: '700', color: colors.white},
+  totalSummaryContainer: {
+    position: 'absolute',
+    height: 100,
+    backgroundColor: colors.white,
+    bottom: 0,
+    right: 0,
+    left: 0,
+    borderWidth: 0.3,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    rowGap: 12,
+  },
+  flexDirection: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
 });
 
 export default styles;

@@ -11,7 +11,7 @@ const ProductList = ({item, index}: {item: ProductModel; index: number}) => {
 
   const renderButtons = () => {
     return (
-      <Pressable style={styles.addToCart} onPress={() => addToCart({...item, quantity: +1})}>
+      <Pressable style={styles.addToCart} onPress={() => addToCart({...item, quantity: 1})}>
         <Text style={styles.addToCartText}>Add to cart</Text>
       </Pressable>
     );

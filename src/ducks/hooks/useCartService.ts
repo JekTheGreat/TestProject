@@ -1,12 +1,14 @@
 import {useCallback} from 'react';
 import {useAppDispatch, useAppSelector} from '../ducksHook';
-import {add, subtract} from '@src/ducks/slices/cartSlice';
+import {add, subtract, removeProduct, reset} from '@src/ducks/slices/cartSlice';
 import {CartListModel, CartStateModel} from '@src/models/ProductModel';
 
 export type CartServiceOperators = {
   cart: CartStateModel;
   addToCart: (item: CartListModel) => void;
   subtractToCart: (item: CartListModel) => void;
+  removeToCart: (item: CartListModel) => void;
+  resetCart: () => void;
 };
 
 export const useCartService = (): Readonly<CartServiceOperators> => {
@@ -26,6 +28,15 @@ export const useCartService = (): Readonly<CartServiceOperators> => {
       },
       [dispatch],
     ),
+    removeToCart: useCallback(
+      (item: CartListModel) => {
+        dispatch(removeProduct(item));
+      },
+      [dispatch],
+    ),
+    resetCart: useCallback(() => {
+      dispatch(reset());
+    }, [dispatch]),
   };
 };
 

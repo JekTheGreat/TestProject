@@ -7,4 +7,5 @@ export const colors = {
   lightGray: '#F2F2F2',
   semiLightGray: '#E6E6E6',
   red: '#FF0000',
+  green: '#008000',
 };

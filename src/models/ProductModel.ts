@@ -13,4 +13,6 @@ export interface CartListModel extends ProductModel {
 
 export interface CartStateModel {
   cartList: CartListModel[];
+  totalCartQty: number;
+  totalSummary: number;
 }
